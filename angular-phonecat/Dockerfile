@@ -6,9 +6,7 @@ COPY package*.json ./
 
 COPY . .
 
-RUN npm install && \
-    npm run start
-
+RUN npm install 
+   
 EXPOSE 8000
-
-CMD [ "http-server", "dist" ]
+CMD ["npm", "run", "start"]

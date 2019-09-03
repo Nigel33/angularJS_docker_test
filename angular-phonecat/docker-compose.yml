@@ -2,8 +2,5 @@ version: '3'
 services:
   front:
     build: .
-    command: bash -c "npm start"
-    volumes: 
-      - .:/angular-phonecat
     ports: 
       - "8000:8000"
